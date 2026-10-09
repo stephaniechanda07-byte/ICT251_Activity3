@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Chanda - Student Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER (theme button goes here, inside the header) -->
+    <header id="top">
+        <button id="theme-toggle" type="button">Switch to Dark Mode</button>
+
+        <h1>Welcome to Stephanie Chanda's Website</h1>
+
+        <p>
+            A personal website about me, my hobbies and my learning journey.
+        </p>
+
+        <p>
+            Student Number: 202510778
+        </p>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#plan">My Learning Plan</a>
+        <a href="#projects">My Projects</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+
+        <a href="https://developer.mozilla.org/en-US/docs/Learn"
+           target="_blank" rel="noopener">
+            Learn Web Development
+        </a>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="content-section">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Stephanie Chanda and my student number is
+                202510778. I am a university student at Mulungushi University
+                with an interest in computer science and technology. I enjoy
+                learning new things and developing skills that can help me
+                both academically and in my future career.
+            </p>
+
+            <p>
+                I am particularly interested in computers, programming and
+                web technologies. I am learning how websites are created
+                using HTML and CSS, and I want to continue improving my
+                technical skills through practice and personal projects.
+            </p>
+
+            <p>
+                Outside my academic work, I enjoy football, listening to
+                music and spending time learning about technology. My goal
+                is to become more confident in web development and use the
+                knowledge I gain to create useful and interesting digital
+                projects.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+
+        </section>
+
+
+        <!-- HOBBIES -->
+        <section id="hobbies" class="content-section">
+
+            <h2>My Hobbies</h2>
+
+            <p>
+                In my free time, I enjoy several activities that help me
+                relax and learn new things.
+            </p>
+
+            <ul>
+                <li>Watching movies</li>
+                <li>Listening to music</li>
+                <li>Coding and learning about technology</li>
+            </ul>
+
+
+            <h3>How I Plan to Improve My Web Skills</h3>
+
+            <ol>
+                <li>Practise HTML regularly by creating different webpages.</li>
+                <li>Learn CSS and practise designing attractive webpages.</li>
+                <li>Build small web projects to improve my practical skills.</li>
+                <li>Learn more about JavaScript and interactive websites.</li>
+            </ol>
+
+        </section>
+
+
+        <!-- LEARNING PLAN (study hours calculator goes at the bottom of this section) -->
+        <section id="plan" class="content-section">
+            <h2>My Learning Plan</h2>
+
+            <p>
+                This is my weekly plan for improving my web development
+                knowledge and practical skills.
+            </p>
+
+            <table>
+
+                <caption>
+                    My Weekly Web Development Learning Plan
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Practise creating and structuring webpages.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Practise colours, fonts, spacing and layouts.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web Development</td>
+                        <td>Build and test a small website.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <!-- STUDY HOURS CALCULATOR -->
+            <h3>Study Hours Calculator</h3>
+
+            <form id="study-form" novalidate>
+                <div class="form-group">
+                    <label for="hours">Planned hours per day:</label>
+                    <input type="text" id="hours" inputmode="decimal">
+                </div>
+
+                <div class="form-group">
+                    <label for="days">Days per week (1 to 7):</label>
+                    <input type="text" id="days" inputmode="numeric">
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            <p id="study-error" class="error" aria-live="polite"></p>
+            <p id="study-result" aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="content-section">
+
+            <h2>My Projects</h2>
+
+            <div class="project">
+                <h3>Web Development</h3>
+                <p>I have learned how to make websites using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <h3>Java Programming</h3>
+                <p>I have learned the basics of Java programming.</p>
+            </div>
+
+            <div class="project">
+                <h3>Python Programming</h3>
+                <p>I have learned the basics of Python programming.</p>
+            </div>
+
+        </section>
+
+
+        <!-- PHOTOS (gallery viewer) -->
+        <section id="photos" class="content-section">
+
+            <h2>My Photos</h2>
+
+            <figure>
+                <img id="gallery-image"
+                     src="images/photo1.jpg"
+                     alt="Photo 1"
+                     width="300">
+                <figcaption id="gallery-caption">My first photo</figcaption>
+            </figure>
+
+            <p id="gallery-count"></p>
+
+            <button id="prev-photo" type="button">Previous</button>
+            <button id="next-photo" type="button">Next</button>
+
+        </section>
+
+
+        <!-- MEDIA -->
+        <section id="media" class="content-section">
+
+            <h2>My Media</h2>
+
+            <!-- VIDEO -->
+            <h3>My Introduction Video</h3>
+
+            <video controls width="600">
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+
+            <p>
+                In this video, I introduce myself, my programme and a
+                web development skill that I hope to learn.
+            </p>
+
+            <p>
+                <strong>Video summary:</strong>
+                My name is Stephanie Chanda. I am a student at
+                Mulungushi University. In the video, I introduce myself
+                and explain one of the web development skills I hope
+                to improve.
+            </p>
+
+            <!-- AUDIO -->
+            <h3>My Audio</h3>
+
+            <audio controls>
+                <source src="videos/voice.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>
+                In this audio recording, I talk about my hobbies and
+                my reason for studying Web Technologies.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT (contact form + preview) -->
+        <section id="contact" class="content-section">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                <strong>Browser demonstration only — no message is sent.</strong>
+            </p>
+
+            <form id="contact-form" novalidate>
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                    <p id="name-error" class="error"></p>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                    <p id="email-error" class="error"></p>
+                </div>
+
+                <!-- TOPIC -->
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="web-development">Web Development</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                    <p id="message-error" class="error"></p>
+                </div>
+
+                <!-- SUBMIT -->
+                <button type="submit">Validate</button>
+
+            </form>
+
+            <!-- Preview appears here after valid submission -->
+            <div id="preview" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Stephanie Chanda | Student Number: 202510778
+        </p>
+
+        <p>
+            ICT251 Web Technologies
+        </p>
+
+        <p>
+            <a href="https://github.com/YOUR-USERNAME/YOUR-REPO"
+               target="_blank" rel="noopener">View Source on GitHub</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
